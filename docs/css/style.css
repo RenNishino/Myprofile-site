@@ -343,7 +343,7 @@ button {
 .card-inner {
   width: 250px;
   height: 150px;
-  border-radius: 20px;
+  border-radius: 24px;
   position: relative;
   -webkit-transition: 1.5s ease-in-out;
   transition: 1.5s ease-in-out;
