@@ -137,7 +137,7 @@ $('.js-btn-back').click(function () {
   }
 });
 $('.more.btn').click(function () {
-  $('.news').removeClass('news-more');
+  $('.news:nth-last-of-type(-n+4), .more.btn').toggleClass('news-more');
 });
 $('.card-inner').click(function () {
   $(this).toggleClass('js-active');
