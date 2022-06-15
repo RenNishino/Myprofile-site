@@ -125,10 +125,6 @@ button {
   *font-size: 100%;
 }
 
-legend {
-  color: #000;
-}
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -164,52 +160,6 @@ legend {
 [type=submit]::focus,
 [type=button]::focus {
   outline-offset: -2px;
-}
-
-.u-link-btn {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (max-width: 500px) {
-  .u-break-sm {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .u-break-md {
-    display: none;
-  }
-}
-.u-break-lg {
-  display: none;
-}
-@media screen and (max-width: 1080px) {
-  .u-break-lg {
-    display: none;
-  }
-}
-
-.l-container-xl, .l-container-l, .l-container, .l-container-s {
-  width: 92%;
-  margin: 0 auto;
-}
-
-.l-container-s {
-  max-width: 800px;
-}
-
-.l-container {
-  max-width: 1080px;
-}
-
-.l-container-l {
-  max-width: 1200px;
-}
-
-.l-container-xl {
-  max-width: 1400px;
 }
 
 .footer {
@@ -265,67 +215,10 @@ legend {
           box-shadow: none;
 }
 
-@media screen and (max-width: 1080px) {
-  .header {
-    padding: 8px 16px;
-    width: 100%;
-  }
-  .header-menu {
-    font-size: 24px;
-  }
-  .header-menu__item {
-    margin-left: 24px;
-    padding: 0 4px;
-  }
+.hamburger{
+  display: none;
 }
-@media screen and (max-width: 768px) {
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 16px 40px;
-    opacity: 0.5;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: bold;
-    background-color: #fff;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-  }
-  .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 40px;
-  }
-  .header-menu__item {
-    margin-left: 40px;
-    font-family: "Ephesis", cursive;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    border-radius: 16px;
-    padding: 0 8px;
-  }
-  .header-menu__item:hover {
-    display: block;
-    -webkit-box-shadow: 5px 5px 10px gray;
-            box-shadow: 5px 5px 10px gray;
-  }
-  .header-menu__item:focus {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
+
 .btn {
   padding: 8px 24px;
   border: 3px solid #000;
@@ -780,31 +673,7 @@ legend {
             transform: translateY(-1500px);
   }
 }
-@media screen and (max-width: 1080px) {
-  .myProfile img {
-    width: 50%;
-    height: 50%;
-  }
-  .myProfile__name {
-    margin-top: 32px;
-  }
 
-  .cards {
-    margin: 40px 40px 0;
-    height: 500px;
-  }
-
-  .card-inner {
-    width: 180px;
-    height: 120px;
-    margin-top: 24px;
-  }
-
-  .side {
-    padding: 20px 0;
-    font-size: 24px;
-  }
-}
 .contact-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,13 +685,8 @@ legend {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
-.contact-sec::after {
-  content: "お気軽にお問い合わせください";
-  position: absolute;
-  top: 220px;
-}
+
 
 .contact-item {
   margin-top: 24px;
@@ -1057,24 +921,6 @@ legend {
   background-color: white;
 }
 
-@media screen and (max-width: 1080px) {
-  .mv {
-    background-size: 140%;
-    background-position: bottom 0% left;
-    width: 100%;
-    height: 1200px;
-  }
-  .mv__copy {
-    top: 300px;
-    font-size: 64px;
-    line-height: 0;
-  }
-  .mv__copy-sub {
-    top: 320px;
-    font-size: 96px;
-    line-height: 0.3;
-  }
-}
 .service-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,113 +1082,6 @@ legend {
   visibility: visible;
 }
 
-@media screen and (max-width: 1080px) {
-  .service-item__img {
-    width: 47%;
-    height: 250px;
-  }
-  .service-item__img.first:after {
-    content: "ヒアリング";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-  }
-  .service-item__img.first:before {
-    content: "Consulting";
-    position: absolute;
-    top: -0.2em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    font-family: "Ephesis", cursive;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.1);
-    top: 2px;
-  }
-  .service-item__img.second:after {
-    content: "デザイン";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-  }
-  .service-item__img.second:before {
-    content: "Design";
-    position: absolute;
-    top: -0.2em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    font-family: "Ephesis", cursive;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.1);
-    top: 2px;
-  }
-  .service-item__img.third:after {
-    content: "コーディング";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-  }
-  .service-item__img.third:before {
-    content: "Coding";
-    position: absolute;
-    top: -0.2em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    font-family: "Ephesis", cursive;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.3);
-    top: 2px;
-  }
-  .service-item__img.fourth:after {
-    content: "アフターフォロー";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-  }
-  .service-item__img.fourth:before {
-    content: "FollowUp";
-    position: absolute;
-    top: -0.2em;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 64px;
-    font-family: "Ephesis", cursive;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.3);
-    top: 2px;
-  }
-  .service-item__txt {
-    width: 48%;
-    font-size: 16px;
-    text-align: center;
-  }
-}
 .works-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1517,14 +1256,440 @@ legend {
   background-color: rgba(83, 97, 223, 0.8);
 }
 
+
 @media screen and (max-width: 1080px) {
-  .skill {
-    width: 25%;
+  .header {
+    padding: 8px 16px;
+    width: 100%;
   }
-  .skill p {
-    width: 102%;
+  .header-menu {
     font-size: 24px;
-    padding: 8px 0;
+  }
+  .header-menu__item {
+    margin-left: 24px;
+    padding: 0 4px;
+  }
+  .mv {
+    background-size: 140%;
+    background-position: bottom 0% left;
+    width: 100%;
+    height: 1200px;
+  }
+  .mv__copy {
+    top: 300px;
+    font-size: 64px;
+    line-height: 0;
+  }
+  .mv__copy-sub {
+    top: 320px;
+    font-size: 96px;
+    line-height: 0.3;
+  }
+  .service-item__img {
+    width: 47%;
+    height: 250px;
+  }
+  .service-item__img.first:after {
+    content: "ヒアリング";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
+  .service-item__img.first:before {
+    content: "Consulting";
+    position: absolute;
+    top: -0.2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Ephesis", cursive;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    top: 2px;
+  }
+  .service-item__img.second:after {
+    content: "デザイン";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+  }
+  .service-item__img.second:before {
+    content: "Design";
+    position: absolute;
+    top: -0.2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Ephesis", cursive;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    top: 2px;
+  }
+  .service-item__img.third:after {
+    content: "コーディング";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .service-item__img.third:before {
+    content: "Coding";
+    position: absolute;
+    top: -0.2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Ephesis", cursive;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    top: 2px;
+  }
+  .service-item__img.fourth:after {
+    content: "アフターフォロー";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .service-item__img.fourth:before {
+    content: "FollowUp";
+    position: absolute;
+    top: -0.2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Ephesis", cursive;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    top: 2px;
+  }
+  .service-item__txt {
+    width: 46%;
+    font-size: 20px;
+  }
+  .myProfile img {
+    width: 50%;
+    height: 50%;
+  }
+  .myProfile__name {
+    margin-top: 32px;
+  }
+
+  .cards {
+    margin: 40px 40px 0;
+    height: 500px;
+  }
+
+  .card-inner {
+    width: 180px;
+    height: 120px;
+    margin-top: 24px;
+  }
+
+  .side {
+    padding: 20px 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%); 
+    background-color: #fff;
+    transition: ease .4s;
+    display: flex;
+  }
+  .hamburger{
+    display: inline-block;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+    width: 48px;
+    height: 100%;
+  }
+  .header__hamburger {
+    width: 48px;
+    height: 100%;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    position: relative;
+    transition: ease .4s;
+    display: block;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 0;
+  }
+  .header__nav.active {
+    transform: translateX(0);
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  .hamburger.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px 40px;
+    opacity: 0.5;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: bold;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  .header-ttl{
+    font-size: 42px;
+  }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .header-menu__item {
+    margin-left: 0;
+    font-family: "Ephesis", cursive;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 16px;
+    padding: 0 8px;
+    font-size: 60px;
+  }
+  .header-menu__item:hover {
+    display: block;
+    -webkit-box-shadow: 5px 5px 10px gray;
+            box-shadow: 5px 5px 10px gray;
+  }
+  .header-menu__item:focus {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .mv{
+    height: 800px;
+  }
+  .mv__copy {
+    top: 160px;
+    font-size: 42px;
+  }
+  .mv__copy-sub {
+    top: 180px;
+    font-size: 48px;
+  }
+  .mv__copy.mv-js2{
+    top: 280px;
+  }
+  .mv__copy-sub.mv-js2{
+    top: 300px;
+  }
+  .scroll-1{
+    top: 400px;
+  }
+  .scroll-2{
+    top: 420px;
+  }
+  .scroll-3{
+    top: 420px;
+  }
+  .scroll-4{
+    top: 440px;
+  }
+  .scroll-5{
+    top: 500px;
+  }
+  .scroll-6{
+    top: 590px;
+  }
+  .scroll-7{
+    top: 720px;
+  }
+  .service-item__img{
+    width: 60%;
+    height: 300px;
+  }
+  .service-item:nth-child(even){
+    flex-direction: column-reverse;
+  }
+  .service-item:nth-child(odd){
+    flex-direction: column;
+  }
+  .service-item__txt {
+    margin-top: 32px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .skills-inner{
+    height: 500px;
+  }
+  .skill{
+    width: 25%;
+    height: 130px;
+  }
+  .skill p{
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  .about-inner{
+    display: block;
+  }
+  .about-inner{
+    padding-bottom: 40px;
+  }
+  .myProfile{
+    width: 100%;
+  }
+  .cards{
+    margin: 40px 20px 40px;
+    height: auto;
+  }
+  .card-inner{
+    margin-bottom: 40px;
+    border-radius: 24px;
+  }
+  .myNews{
+    width: 80%;
+    margin: 80px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-ttl{
+    font-size: 32px;
+  }
+  .mv{
+    background-size: 200%;
+    background-position: right;
+  }
+  .scroll-1.js-active{
+    font-size: 32px;
+    left: 40px;
+  }
+  .scroll-2.js-active{
+    left: 120px;
+  }
+  .scroll-3.js-active{
+    left: 140px;
+  }
+  .scroll-4.js-active{
+    left: 160px;
+  }
+  .scroll-5.js-active{
+    left: 170px;
+  }
+  .scroll-6.js-active{
+    left: 175px;
+  }
+  .scroll-7.js-active{
+    left: 160px;
+  }
+  .service-item{
+    width: 100%;
+  }
+  .service-item__img{
+    width: 100%;
+  }
+  .service-item__img img{
+    border-radius: 0;
+  }
+  .skills-inner{
+    margin: 0;
+    width: 60%;
+    height: auto;
+  }
+  .skill{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+  }
+  .skill p{
+    font-size: 32px;
+  }
+  .sec-ttl{
+    font-size: 64px;
+    margin: 40px;
+  }
+  .card-inner{
+    margin-bottom: 20px;
+    width: 150px;
+    height: 120px;
+    border-radius: 12px;
+  }
+  .side{
+    border-radius: 12px;
+    font-size: 18px;
+  }
+  .card-content{
+    margin-top: 20px;
+  }
+  .news-ttl{
+    font-size: 32px;
+  }
+  .news:first-child::before{
+    top: 9px;
+    right: 15px;
+  }
+  .news:first-child::after{
+    right: -50px;
+  }
+}

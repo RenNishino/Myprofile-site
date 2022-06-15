@@ -136,9 +136,34 @@ $('.js-btn-back').click(function () {
     changeslide(); // そうでなければスライド番号を減らして（前のスライドに切り替え）関数実行
   }
 });
+
 $('.more.btn').click(function () {
   $('.news:nth-last-of-type(-n+4), .more.btn').toggleClass('news-more');
 });
+
 $('.card-inner').click(function () {
   $(this).toggleClass('js-active');
+});
+
+const ham = $('#js-hamburger');
+const nav = $('#js-nav');
+const item = $('.header-menu__item')
+var state = false;
+
+ham.on('click', function () {
+  ham.toggleClass('active'); 
+  nav.toggleClass('active'); 
+  if (state == true){
+    state = false
+  }else{
+    state = true
+  }
+});
+
+item.on('click', function(){
+  if (state == true){
+    ham.toggleClass('active');
+    nav.toggleClass('active');
+    state = false
+  }
 });

@@ -13,11 +13,11 @@
 		<link rel="apple-touch-icon" href="webclip.png" />
 
 		<!-- ogp -->
-		<meta property="og:site_name" content="サイト名" />
+		<meta property="og:site_name" content="西野蓮" />
 		<meta property="og:url" content="URL" />
-		<meta property="og:type" content="website or article" />
-		<meta property="og:title" content="ページのタイトル" />
-		<meta property="og:description" content="ページの説明" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="西野蓮のプロフィールサイト" />
+		<meta property="og:description" content="初めまして。西野蓮と申します。" />
 		<meta property="og:image" content="URL" />
 		<meta property="og:locale" content="ja_JP" />
 		<!-- <meta property="fb:app_id" content="AppID"> -->
@@ -47,7 +47,7 @@
 
 			<a href="index.html" class="header-ttl">Ren's Profile</a>
 
-			<nav>
+			<nav class="header__nav" id="js-nav">
 				<ul class="header-menu">
 					<li><a  href="#service" class="header-menu__item">Service</a></li>
 					<li><a  href="#skills" class="header-menu__item">Skills</a></li>
@@ -56,6 +56,12 @@
 					<li><a  href="#contact" class="header-menu__item">Contact</a></li>
 				</ul>
 			</nav>
+
+			<button class="header__hamburger hamburger" id="js-hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</header>
 
 		<div class="mv">
@@ -362,6 +368,8 @@
 		<section class="contact-sec" id="contact">
 
 			<h1 class="sec-ttl">Contact</h1>
+
+			<p class="contact-disc">お気軽にお問い合わせください</p>
 
 			<form action="mailto:ren20021122@gmail.com" method="post">
 				
